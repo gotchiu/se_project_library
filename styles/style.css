@@ -305,6 +305,8 @@
 .membership {
   padding: 100px 0 140px;
   background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
 }
 
 .membership__title {
@@ -319,12 +321,21 @@
 .membership__steps {
   list-style-type: none;
   padding: 0;
-  margin: 100px 0 0;
+  margin: 50px 0;
   /* Add styles */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }
 
 .step {
   /* Add styles */
+  flex-basis: auto;
+
+  width: 220px;
+  gap: 40px;
+  align-items: center;
 }
 
 .step__title {
@@ -351,14 +362,17 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .about__title {
-  margin: 0;
+  margin: 0 120px 0 0;
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
   z-index: 1;
+  max-width: 154px;
 }
 
 .about__content {
@@ -366,6 +380,15 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
+  z-index: 1;
+}
+
+.about__paragraph {
+  margin: 0 auto 32px;
+}
+
+.about__paragraph:nth-of-type(3) {
+  margin-bottom: 0;
 }
 
 .about__circle {
@@ -373,6 +396,10 @@
   width: 495px;
   height: 495px;
   border-radius: 50%;
+  position: absolute;
+  z-index: 0;
+  top: -121px;
+  left: -92px;
 }
 
 .footer {
