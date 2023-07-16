@@ -264,7 +264,7 @@
   color: #fff;
 }
 
-.staff__list {
+.staff__cards {
   max-width: 760px;
   margin: 68px auto 0;
   display: flex;
@@ -403,9 +403,8 @@
   height: 495px;
   border-radius: 50%;
   position: absolute;
-  z-index: 0;
   top: -121px;
-  left: -92px;
+  left: -91px;
 }
 
 .footer {
