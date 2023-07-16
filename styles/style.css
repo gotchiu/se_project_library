@@ -404,18 +404,32 @@
 
 .footer {
   box-sizing: border-box;
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 60px 102px 60px 80px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .footer__columns {
+  column-count: 3;
+  display: flex;
+  justify-content: space-between;
+  column-gap: auto 100px;
 }
 
 .footer__column_content_hours {
+  flex-wrap: wrap;
 }
 
 .footer__column_content_social {
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer__logo {
+  height: 57px;
+  width: 80px;
 }
 
 .footer__list {
@@ -426,19 +440,30 @@
 }
 
 .footer__list-item {
+  padding-bottom: 16px;
+  margin: 0;
+}
+
+.footer__list-item :nth-of-type(2) {
+  padding: 0;
 }
 
 .footer__column-heading {
+  padding-bottom: 20px;
+  margin: 0;
 }
 
+.footer__column-link:hover {
+  color: #c1c1c1;
+}
 .footer__column-link {
-  color: white;
-  font-size: 16px;
-  line-height: 20px;
   text-decoration: none;
+  color: #fff;
 }
 
 .footer__social-icon {
+  height: 16px;
+  width: 16px;
 }
 
 .footer__copyright {
