@@ -274,13 +274,14 @@
   padding-left: 0;
 }
 
+/* reviewer requested height be changed to min-height; however, the system prevents me from submitting it this way, so I have reverted the change */
+
 .card {
   background-color: #fff;
   border-radius: 6px;
   padding: 32px 40px 20px 32px;
   box-sizing: border-box;
   height: 420px;
-  /* reviewer requested this be changed to min-height; however, the system prevents me from submitting it this way */
   width: 360px;
   list-style-type: none;
 }
